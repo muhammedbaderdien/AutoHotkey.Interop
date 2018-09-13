@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace AutoHotkey.Interop.Util
 {
-    internal static class EmbededResourceHelper
+    public static class EmbededResourceHelper
     {
         public static string FindByName(Assembly assembly, string path) {
             path = Regex.Replace(path, @"[/\\]", "."); //replace slashes with periods

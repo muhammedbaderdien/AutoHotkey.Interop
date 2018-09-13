@@ -52,6 +52,12 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>AhkKeyKeypair.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -81,6 +87,7 @@
   <ItemGroup>
     <EmbeddedResource Include="x64\v2_AutoHotkey.dll" />
     <EmbeddedResource Include="Pipes\pipeclient.ahk" />
+    <None Include="AhkKeyKeypair.snk" />
     <None Include="x86\v2_AutoHotkey.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
